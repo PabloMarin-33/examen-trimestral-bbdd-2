@@ -1,9 +1,17 @@
+CREATE TABLE marca(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nombre TEXT NOT NULL UNIQUE
+)
 
+CREATE TABLE modelo(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nombre TEXT NOT NULL UNIQUE
+)
 
 CREATE TABLE vehiculos (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     marca  TEXT NOT NULL,
-    nombre TEXT NOT NULL,
+    modelo TEXT NOT NULL,
     precio INTEGER NOT NULL,
     kilometros_recorridos INTEGER NOT NULL
 )
@@ -12,5 +20,6 @@ CREATE TABLE vehiculos (
 CREATE TABLE centro (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     provincia TEXT NOT NULL,
-    calle TEXT NOT NULL 
+    calle TEXT NOT NULL
+
 )

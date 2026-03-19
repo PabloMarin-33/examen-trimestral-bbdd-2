@@ -81,6 +81,9 @@ Crea un `join-2.sql` que muestre los vehiculos de la cadena con la siguiente inf
 ## Teoria (2 puntos)
 
 1. ¿Que es una caché? ¿Para que se usa?
+
+Un cache es una capa de almacenamiento de datos de alta velocidad que guarda una copia de informacion.
+
 2. Si Redis es **tan** rápido, ¿por qué no usarlo en lugar de SQLite o MySQL?
 3. ¿Que diferencias hay entre SQLite3 y MySQL?
 4. ¿Que diferencias hay entre MySQL y PostgreSQL?

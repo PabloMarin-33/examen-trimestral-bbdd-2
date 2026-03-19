@@ -1,0 +1,18 @@
+services:
+  postgres:
+    build: .
+    container_name: postgres_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: uuussseeerrr
+      POSTGRES_PASSWORD: pppaaasss
+      POSTGRES_DB: deberia_cambiar_esto
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./mischema.sql:/docker-entrypoint-initdb.d/schema.sql
+
+volumes:
+  postgres_data:
+

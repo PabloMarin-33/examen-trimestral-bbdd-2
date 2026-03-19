@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mysql:
+    build: .
+    container_name: mysql_mycli_server
+    ports:
+      - "3356:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - /var/log/mysql:/var/log/mysql
+    restart: unless-stopped
+
+volumes:
+  mysql_data:

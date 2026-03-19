@@ -1,7 +1,7 @@
 FROM mysql:8.0-debian
 
 ENV MYSQL_ROOT_PASSWORD=rootpassword
-ENV MYSQL_DATABASE=deberia_cambiar_esto
+ENV MYSQL_DATABASE=tienda_coches
 ENV MYSQL_USER=user
 ENV MYSQL_PASSWORD=userpassword
 
